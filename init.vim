@@ -81,6 +81,9 @@ call plug#end()
 "let g:copilot_assume_mapped = v:true 
 "let g:copilot_no_tab_map = 1
 "vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+nnoremap <leader>aid <cmd>Copilot disable<cr>
+nnoremap <leader>aie <cmd>Copilot enable<cr>
+autocmd BufRead,BufNewFile,BufEnter *Spec.hs :Copilot enable
 
 " my plugin config - rust
 let g:rustfmt_autosave = 1
@@ -351,6 +354,9 @@ colorscheme default
 " plugin - Copilot
 " :Copilot enable
 " :Copilot disable
+" M-[ cycle through suggestions
+" (this requires modifying iterm settings to allow alt key to be used as Meta
+" or Esc+ key)
 "
 " plugin - Coc
 " gd - goto definition
