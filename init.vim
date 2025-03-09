@@ -35,6 +35,10 @@ Plug 'dense-analysis/ale'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'alx741/vim-hindent'
 
+" collections - golang
+Plug 'fatih/vim-go'
+Plug 'charlespascoe/vim-go-syntax'
+
 " misc programming plugins
 Plug 'Pocco81/auto-save.nvim'
 " nerd commenter
@@ -43,7 +47,8 @@ Plug 'preservim/nerdcommenter'
 "Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " fuzzy finder
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-telescope/telescope.nvim'
+", { 'rev': '0.1.8' }
 " Tree finder
 Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
 Plug 'kyazdani42/nvim-tree.lua'
